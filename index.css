@@ -1,0 +1,74 @@
+
+
+*{
+  margin: 0;
+  padding:0;
+}
+.cf:before,.cf:after{
+  content: '';  
+  display: table;
+}
+.cf:after{
+  clear:both;
+}
+h1{
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+  color:#444;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 14px;
+}
+.container{
+  position: relative;
+  margin: 50px auto;
+  max-width: 80%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border:1px solid #c5c5c5;
+}
+
+.gallery{
+  width: 100%;
+  overflow: hidden;
+}
+
+.image{
+  /* float:left not working in mozilla*/
+  display: inline-block;
+  padding: 2%;
+  background-color: #fff;
+  margin: 1%;
+  width: 18%;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  text-align: center;  
+  border:1px solid #c3c3c3;
+  cursor: pointer;
+}
+
+.image figure{
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.image figure img{
+  width: 100%;
+}
+
+figcaption{
+  background-color: rgba(0,0,0,0.8);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  font-family: sans-serif;
+  cursor: pointer;
+  color: slategrey;
+  max-width:100%;
+  font-weight: bold;
+}
+
+figcaption:hover{
+  color: #fff;
+}
